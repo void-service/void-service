@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>void loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="video-container" >
+        <video autoplay muted loop id="background-video" class="rotating-video" preload="auto">
+            <source src="black_hole.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+       setTimeout(function() {
+            window.location.href = 'content/main_page.html';
+        }, 5000);
+    </script>
+</body>
+
+</html>
