@@ -1,1 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One', cursive;
+}
+body {
+    margin: 0; /* Убираем отступы по умолчанию */
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Помещаем звезды за все остальные элементы */
+    background-color: #0b0a0a; /* Цвет фона, черный для эффекта ночного неба */
+}
+
+.main{
+    padding: 5px 10px 80px 10px;
+}
+
+
+.main .list_project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.main .list_project .item{
+    border: 1px solid #8f89b9;
+    display: flex;
+    align-items: center;
+    height: 180px;
+    min-width: 140px;
+    background: linear-gradient(135deg, rgba(17, 19, 18, 0.692), rgba(0, 0, 0, 0.11));;
+    backdrop-filter: blur(1px);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.main .list_project .item .block {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main .list_project .item .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.main .list_project .item .logo img {
+    width: 130px;
+}
+
+.main .list_project .item .block .description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 140px;
+    height: auto;
+}
+
+.main .list_project .item .block .description p{
+    color: #dddddd;
+    font-size: 9pt;
+    font-weight: 300;
+    font-family: 'Jura', sans-serif;
+}
+
+
+.main .list_project .item .block .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+.main .list_project .item .block .button button{
+    bottom: 1px;
+    position: absolute; /* Устанавливаем позиционирование относительно родительского блока */
+    left: 50%; /* Располагаем кнопку по горизонтали в середине блока */
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    height: 30px;
+    width: 150px;
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+    font-size: 11pt;
+    background: linear-gradient(to left, #303161 0%, #37365e 50%, #303161 100%);
+    border: none;
+    border-radius: 5px;
+}
+
+.main .list_project .item .block .button button:active {
+    background: #2c3e50; /* Изменяем цвет фона при нажатии */
+}
