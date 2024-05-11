@@ -19,6 +19,7 @@
 }
 
 .buttons {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +34,9 @@
 }
 
 .buttons label{
-    width: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-size: 1.75em;
     -webkit-text-stroke: 1px white;
     color: transparent;
@@ -43,14 +46,14 @@
 
 
 .buttons label:nth-child(1):hover,
-.buttons label:nth-child(4):hover {
+.buttons label:nth-child(2):hover {
 
     opacity: 1;
     filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
 }
 
 .tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
-.tabs input:nth-child(2):checked ~ .buttons label:nth-child(4){
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2){
     color: #fff;
     opacity: 1;
     filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
