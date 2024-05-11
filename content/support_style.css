@@ -1,8 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+*{
+    color: white;
+    font-family: "Tektur", sans-serif;
+}
+
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     min-height: 100vh;
     background: linear-gradient(to bottom, #0a0a0a, #070707);
+    padding: 0 50px 0 50px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.content .logo p{
+    font-size: 70pt;
+    font-family: 'Jura', sans-serif;
+}
+
+.content .author p {
+    font-family: 'Jura', sans-serif;
+    font-size: 8pt;
+    margin-bottom: 20px;
+}
+
+.content .notification {
+    border: 1px solid #8f89b9;
+    border-radius: 8px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(17, 19, 18, 0.692), rgba(0, 0, 0, 0.11));
+    backdrop-filter: blur(1px);
+}
+
+.content .notification .description{
+    font-family: "Tektur", sans-serif;
+    font-weight: 300;
+    font-size: 9pt;
+    margin-bottom: 10px;
+}
+
+
+.content .notification .donat .usdt {
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.content .notification .donat .trx {
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.address {
+    padding: 4px;
+    background: #2c3e50;
+    border-radius: 5px;
+}
