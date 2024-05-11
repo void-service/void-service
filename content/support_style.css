@@ -51,24 +51,24 @@ body{
 
 
 .content .notification .donat .usdt {
-    font-size: 10pt;
+    font-size: 8pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 6px;
 }
 
 .content .notification .donat .trx {
-    font-size: 10pt;
+    font-size: 8pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 17px;
+    gap: 15px;
 }
 
 .address {
     padding: 4px;
-    background: #2c3e50;
+    background: #292640;
     border-radius: 5px;
 }
