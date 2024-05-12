@@ -19,7 +19,6 @@
 }
 
 .buttons {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +32,7 @@
     background: #0b0a0a;
 }
 
-.buttons label{
+.tabs .buttons label{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -47,7 +46,6 @@
 
 .buttons label:nth-child(1):hover,
 .buttons label:nth-child(2):hover {
-
     opacity: 1;
     filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
 }
