@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poiret One', cursive;
+    font-family: "Tektur", sans-serif;
 }
 body {
     margin: 0; /* Убираем отступы по умолчанию */
@@ -76,9 +78,8 @@ body {
 
 .main .list_project .item .block .description p{
     color: #dddddd;
-    font-size: 9pt;
+    font-size: 8pt;
     font-weight: 300;
-    font-family: 'Jura', sans-serif;
 }
 
 
@@ -95,7 +96,7 @@ body {
     position: absolute; /* Устанавливаем позиционирование относительно родительского блока */
     left: 50%; /* Располагаем кнопку по горизонтали в середине блока */
     transform: translateX(-50%);
-
+    font-family: 'Jura', sans-serif;
     display: flex;
     align-items: center;
     justify-content:  center;

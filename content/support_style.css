@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Tektur", sans-serif;
 }
 
 body{
@@ -12,6 +13,19 @@ body{
 }
 p {
     color: white;
+}
+.alert {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    left: 36%;
+    bottom: 50%;
+    z-index: 999;
+    height: 30px;
+    width: 120px;
+    background-color: #181f34;
+    border-radius: 5px;
 }
 .stars {
     position: fixed;
@@ -24,14 +38,23 @@ p {
 }
 .content {
     padding: 0 50px 0 50px;
-    font-family: "Tektur", sans-serif;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
+.content .logo{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 .content .logo p{
+    margin: 0;
+    padding: 0;
+    border: none;
     font-size: 70pt;
     font-family: 'Jura', sans-serif;
 }
@@ -53,8 +76,6 @@ p {
 }
 
 .content .notification .description{
-    font-family: "Tektur", sans-serif;
-    font-weight: 300;
     font-size: 8pt;
     margin-bottom: 10px;
 }
@@ -79,7 +100,7 @@ p {
 
 .address {
     padding: 4px;
-    background: #292640;
+    background:  #181f34;
     border-radius: 5px;
     margin-bottom: 10px;
 }

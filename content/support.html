@@ -13,6 +13,8 @@
 
 </head>
 <body>
+<div class="alert"><p>скопировано</p></div>
+
 <div class="tabs">
     <input id="home" type="radio" name="tabsMenu">
     <input id="support" type="radio" name="tabsMenu">
@@ -22,6 +24,7 @@
     </div>
 </div>
 <div class="stars"></div>
+
 <div class="content">
     <div class="logo"><p>VOID</p></div>
     <div class="author"><p>danse macabre & cooperxgod</p></div>
@@ -68,10 +71,35 @@
         </div>
     </div>
 
-
 </div>
 
 <script>
+    let blocks = document.getElementsByClassName("address");
+    let content = document.getElementsByClassName('alert');
+
+    for (let i = 0; i < blocks.length; i++) {
+        blocks[i].addEventListener("click", function() {
+            let textarea = document.createElement("textarea");
+            textarea.value = this.textContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            for (let i = 0; i < content.length; i++) {
+                content[i].style.display = 'flex';
+
+                (function(index) {
+                    setTimeout(function() {
+                        content[index].style.display = 'none';
+                    }, 1580);
+                })(i);
+            }
+        });
+    }
+
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
             document.getElementById("support").checked = true;
