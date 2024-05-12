@@ -87,13 +87,10 @@
 
 
     function showContent(id) {
-        // Получаем все элементы с классом "content"
         let contents = document.getElementsByClassName('content');
-        // Проходим по всем элементам и скрываем их
         for (let i = 0; i < contents.length; i++) {
             contents[i].style.display = 'none';
         }
-        // Показываем элемент с нужным id
         document.getElementById(id).style.display = 'block';
 
         let indicator = document.querySelector('.indicator');
