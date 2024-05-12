@@ -48,12 +48,14 @@ p {
     padding: 10px;
     background: linear-gradient(135deg, rgba(17, 19, 18, 0.692), rgba(0, 0, 0, 0.11));
     backdrop-filter: blur(1px);
+    margin-bottom: 35px;
+
 }
 
 .content .notification .description{
     font-family: "Tektur", sans-serif;
     font-weight: 300;
-    font-size: 9pt;
+    font-size: 8pt;
     margin-bottom: 10px;
 }
 
@@ -61,24 +63,25 @@ p {
 .content .notification .donat .usdt {
     font-size: 10pt;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     margin-bottom: 6px;
 }
 
 .content .notification .donat .trx {
     font-size: 10pt;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
 }
 
 .address {
     padding: 4px;
     background: #292640;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .content .media {
