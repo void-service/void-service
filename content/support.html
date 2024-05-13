@@ -53,7 +53,7 @@
         </div>
         <div class="item">
             <div class="icon" id="youtube">
-                <label class="youtube" data-href="https://www.youtube.com/@cooperxgodcrypto"><i class="fa-brands fa-youtube"></i></label>
+                <label class="youtube" data-href="https://www.youtube.com/@cooperxgodcrypto" ><i class="fa-brands fa-youtube"></i></label>
             </div>
             <p class="name">cooperxgod</p>
         </div>
@@ -104,7 +104,7 @@
             // Получаем ссылку из атрибута data-href
             let href = label.getAttribute('data-href');
             // Переходим по ссылке
-            window.location.href = href;
+            window.open(href, '_blank');
         });
     });
 
