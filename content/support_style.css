@@ -10,6 +10,8 @@
 
 body{
     background: linear-gradient(to bottom, #0a0a0a, #070707);
+    display: flex;
+    justify-content: center;
 }
 p {
     color: white;
@@ -19,8 +21,7 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
-    left: 36%;
-    bottom: 50%;
+    bottom: 46%;
     z-index: 999;
     height: 30px;
     width: 120px;
