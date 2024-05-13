@@ -73,7 +73,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 140px;
-    height: auto;
+    height: 65px;
 }
 
 .main .list_project .item .block .description p{
@@ -87,14 +87,60 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-
 }
+.main .list_project .item .block .button button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 11pt;
+}
+
+.main .list_project .item .block .button .space {
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    gap: 1.2rem;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    background: linear-gradient( 160deg, #120e1e,  #271950);
+    border-radius: 10px;
+}
+
+.main .list_project .item .block .button .star {
+    height: 1.5rem;
+    width: 0.1rem;
+    transition: 0.5s;
+    border-radius: 50px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    background-color: white;
+    animation: space-animation calc(0.1s * var(--i)) linear infinite;
+}
+
+@keyframes space-animation {
+    0% {
+        transform: rotate(-30deg) translateY(calc(-52% * var(--i)));
+    }
+
+    100% {
+        transform: rotate(-30deg) translateY(calc(52% * var(--i)));
+    }
+}
+
+/*
 .main .list_project .item .block .button button{
     bottom: 1px;
-    position: absolute; /* Устанавливаем позиционирование относительно родительского блока */
-    left: 50%; /* Располагаем кнопку по горизонтали в середине блока */
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
     font-family: 'Jura', sans-serif;
     display: flex;
@@ -112,5 +158,7 @@ body {
 }
 
 .main .list_project .item .block .button button:active {
-    background: #2c3e50; /* Изменяем цвет фона при нажатии */
+    background: #2c3e50;
 }
+ */
+
