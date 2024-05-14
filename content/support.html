@@ -65,7 +65,7 @@
         </div>
         <div class="item">
             <div class="icon" id="tg2">
-                <label class="tg"><i class="fa-brands fa-telegram"></i></label>
+                <label class="tg"data-href="https://t.me/void_updates_channel"><i class="fa-brands fa-telegram"></i></label>
             </div>
             <p class="name">VOID</p>
         </div>
@@ -104,7 +104,9 @@
             // Получаем ссылку из атрибута data-href
             let href = label.getAttribute('data-href');
             // Переходим по ссылке
-            window.open(href, '_blank');
+            if (href){
+                window.open(href, '_blank');
+            }
         });
     });
 
