@@ -16,13 +16,9 @@
 <body>
 <div class="tabs">
     <input id="home" type="radio" name="tabsMenu">
-    <!-- <input id="likes" type="radio" name="tabsMenu"> -->
-    <!-- <input id="profile" type="radio" name="tabsMenu"> -->
     <input id="support" type="radio" name="tabsMenu">
     <div class="buttons">
         <label for="home" data-href="../main_page.html"><i class="fa-solid fa-house"></i></label>
-        <!--<label for="likes"><i class="fa-solid fa-heart"></i></label>-->
-        <!-- <label for="profile"><i class="fa-solid fa-user"></i></label>-->
         <label for="support" data-href="../support.html"><i class="fa-sharp fa-solid fa-circle-info"></i></label>
     </div>
 </div>
@@ -30,9 +26,11 @@
 <div class="container">
     <div class="page">
         <div class="logo">
-            <img src="https://catizen.ai/static/images/logo.png" alt="logo">
+            <img src="https://catizen.ai/static/images/logo.png" alt="logo"> <!-- лого сюда, либо сылка, либо картинка с высотой 150рх, путь к кастомному лого
+            писать так: ../logos/имя лого-->
         </div>
-        <div class="loading_time"><p>время добавления 27.04 в 22:10</p></div>
+        <div class="loading_time"><p>время добавления 27.04 в 22:10</p></div> <!--время добавлния(коммент чисто для того, что бы обозначить
+         что тут нужно вносить изменения-->
         <div class="info">
             <div class="switch_content">
                 <div class="switch">
@@ -44,13 +42,15 @@
                 </div>
             </div>
             <div class="content_page">
-                <div id="instruction" class="content active"><p>🔥Saakuru Protocol Собираем поинты ждем токены <br> <br> <br>
+                <div id="instruction" class="content active"><p>🔥Saakuru Protocol Собираем поинты ждем токены <br> <br> <br> <!--Короткая иснтрукция сюда, бр это
+                перенос на следующий ряд использовть только когда нужно разделение между абзацами, обычный перенос на следующий ряд
+                работает автоматически. Поддерживает любие смайлы. За ним полное описание-->
                 Что делать? <br> <br> <br>
                     ▪️Переходим на сайт: ссылка  <br> <br>
                     ▪️Подключаем Твиттер  <br> <br>
                     ▪️Указываем код: cooperxgod <br> <br>
                     ▪️Справа в разделе Quest проходим задания</p>
-                    <button class="link">Перейти</button>
+                    <a href="link"><button class="link">Перейти</button></a> <!--ССЫЛКУ СЮДА-->
                 </div>
                 <div id="description" class="content">🔥Saakuru Protocol Собираем поинты ждем токены<br><br><br>
 
@@ -104,25 +104,22 @@
 
     const starsContainer = document.querySelector('.stars');
 
-    // Генерируем звезды с разными размерами и рандомными координатами
     for (let i = 0; i < 100; i++) {
         const star = document.createElement('div');
         star.className = 'star';
-        star.style.width = `${Math.random() * 2}px`; // Размер звезды от 1 до 3 пикселей
+        star.style.width = `${Math.random() * 2}px`;
         star.style.height = star.style.width;
         star.style.background = '#fff';
         star.style.position = 'absolute';
-        star.style.left = `${Math.random() * 100}%`; // Рандомная координата по горизонтали
-        star.style.top = `${Math.random() * 100}%`; // Рандомная координата по вертикали
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
         starsContainer.appendChild(star);
 
-        // Добавляем анимацию мерцания
         star.style.animation = `twinkling ${Math.random() * 3 + 1}s infinite`;
 
-        // Добавляем анимацию планового передвижения
         const moveX = Math.random() < 0.5 ? -1 : 1;
         const moveY = Math.random() < 0.5 ? -1 : 1;
-        const duration = Math.random() * 30 + 10; // Увеличиваем длительность перемещения
+        const duration = Math.random() * 30 + 10;
         const keyframes = `
       @keyframes move${i} {
         0% { transform: translate(0, 0); }
