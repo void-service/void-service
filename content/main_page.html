@@ -11,8 +11,6 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages_projects/tabs.css">
 
-
-
 </head>
 <body>
 <div class="tabs">
@@ -283,23 +281,22 @@
          // Добавляем анимацию мерцания
          star.style.animation = `twinkling ${Math.random() * 3 + 1}s infinite`;
 
-         // Добавляем анимацию планового передвижения
-         const moveX = Math.random() < 0.5 ? -1 : 1;
-         const moveY = Math.random() < 0.5 ? -1 : 1;
-         const duration = Math.random() * 30 + 10; // Увеличиваем длительность перемещения
-         const keyframes = `
-       @keyframes move${i} {
-         0% { transform: translate(0, 0); }
-         50% { transform: translate(${moveX * Math.random() * 20}px, ${moveY * Math.random() * 20}px); }
-         100% { transform: translate(0, 0); }
-       }
-     `;
-         document.styleSheets[0].insertRule(keyframes, document.styleSheets[0].cssRules.length);
-
-         star.style.animation += `, move${i} ${duration}s ease-in-out infinite`;
-         star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
+     //     // Добавляем анимацию планового передвижения
+     //     const moveX = Math.random() < 0.5 ? -1 : 1;
+     //     const moveY = Math.random() < 0.5 ? -1 : 1;
+     //     const duration = Math.random() * 30 + 10; // Увеличиваем длительность перемещения
+     //     const keyframes = `
+     //   @keyframes move${i} {
+     //     0% { transform: translate(0, 0); }
+     //     50% { transform: translate(${moveX * Math.random() * 20}px, ${moveY * Math.random() * 20}px); }
+     //     100% { transform: translate(0, 0); }
+     //   }
+     // `;
+     //     document.styleSheets[0].insertRule(keyframes, document.styleSheets[0].cssRules.length);
+     //
+     //     star.style.animation += `, move${i} ${duration}s ease-in-out infinite`;
+     //     star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
      }
  </script>
- <script src="script.js"></script>
  </body>
  </html>
