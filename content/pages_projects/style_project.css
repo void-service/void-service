@@ -121,14 +121,16 @@ body {
     margin-bottom: 50px;
 
 }
+.container .page .info #instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование кнопок по горизонтали */
 
+}
 .container .page .info #instruction .link {
-    bottom: 1px;
-    position: absolute; /* Устанавливаем позиционирование относительно родительского блока */
-    left: 50%; /* Располагаем кнопку по горизонтали в середине блока */
-    transform: translateX(-50%);
     height: 30px;
     width: 150px;
+    margin: 5px 0; /* Добавляем отступы сверху и снизу для разделения кнопок */
     text-decoration: none;
     color: white;
     background: linear-gradient(to left, #303161 0%, #37365e 50%, #303161 100%);
@@ -136,6 +138,8 @@ body {
     font-size: 11pt;
     border: none;
     border-radius: 5px;
+    text-align: center; /* Выравнивание текста по центру */
+    line-height: 30px; /* Высота строки для вертикального выравнивания текста */
 }
 
     /* Стили для надписей */
