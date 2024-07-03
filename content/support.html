@@ -160,10 +160,18 @@
         star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
     }
 </script>
-<script src="https://telegram.org/js/telegram-web-app.js">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<script>
     Telegram.WebApp.ready();
-    Telegram.WebApp.SettingsButton.isVisible = true
-    Telegram.WebApp.SettingsButton.show();
+    Telegram.WebApp.BackButton.show();
+    
+   // Обработчик нажатия на кнопку "Назад"
+        Telegram.WebApp.BackButton.onClick(() => {
+            alert('Кнопка "Назад" нажата');
+            // Здесь можно добавить логику для обработки нажатия на кнопку "Назад"
+        });
 </script>
+
 </body>
 </html>
