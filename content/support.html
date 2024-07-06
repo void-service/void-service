@@ -10,7 +10,27 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages_projects/tabs.css">
     <link rel="stylesheet" href="support_style.css">
+      <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        function onTelegramWebAppReady() {
+            const tg = window.Telegram.WebApp;
+            
+            // Настройка кнопки "Назад"
+            tg.BackButton.show();
+            
+            // Обработка нажатия на кнопку "Назад"
+            tg.BackButton.onClick(() => {
+                window.history.back();
+            });
+        }
 
+        window.addEventListener('DOMContentLoaded', (event) => {
+            if (window.Telegram.WebApp) {
+                onTelegramWebAppReady();
+            }
+        });
+    </script>
+    
 </head>
 <body>
     <button onclick="goBack()">Back</button>
