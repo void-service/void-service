@@ -163,14 +163,27 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 <script>
-    Telegram.WebApp.ready();
-    Telegram.WebApp.BackButton.show();
-    
-   // Обработчик нажатия на кнопку "Назад"
-        Telegram.WebApp.BackButton.onClick(() => {
-            alert('Кнопка "Назад" нажата');
+    const initData = window.Telegram.WebApp.initData || '';
+        console.log('Telegram Web App init data:', initData);
+
+        // Настройка приложения
+        Telegram.WebApp.ready();
+
+        // Включение кнопки настроек
+        Telegram.WebApp.setSettingsButtonState('visible');
+
+        // Обработка нажатия кнопки настроек
+        Telegram.WebApp.onEvent('settingsButtonClicked', () => {
+            alert('Кнопка "назад" нажата!');
             window.location.href = 'main_page.html';
         });
+
+        // Показать кнопку "назад" в контекстном меню
+        Telegram.WebApp.MainButton.setParams({
+            text: "Назад",
+            color: "#FFFFFF",
+            textColor: "#000000"
+        }).show();
 </script>
 
 </body>
