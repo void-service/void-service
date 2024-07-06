@@ -10,9 +10,11 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages_projects/tabs.css">
     <link rel="stylesheet" href="support_style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 </head>
 <body>
+    <button onclick="goBack()">Back</button>
 <div class="alert"><p>скопировано</p></div>
 
 <div class="tabs">
@@ -160,30 +162,26 @@
         star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
     }
 </script>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 <script>
-    const initData = window.Telegram.WebApp.initData || '';
-        console.log('Telegram Web App init data:', initData);
-
-        // Настройка приложения
         Telegram.WebApp.ready();
 
-        // Включение кнопки настроек
-        Telegram.WebApp.setSettingsButtonState('visible');
+        // Function to go to another page
+        function goToPage() {
+            document.getElementById('content').classList.add('hidden');
+            document.getElementById('another-page').classList.remove('hidden');
+            Telegram.WebApp.BackButton.show();
+        }
 
-        // Обработка нажатия кнопки настроек
-        Telegram.WebApp.onEvent('settingsButtonClicked', () => {
-            alert('Кнопка "назад" нажата!');
-            window.location.href = 'main_page.html';
-        });
+        // Function to go back to the main page
+        function goBack() {
+            document.getElementById('content').classList.remove('hidden');
+            document.getElementById('another-page').classList.add('hidden');
+            Telegram.WebApp.BackButton.hide();
+        }
 
-        // Показать кнопку "назад" в контекстном меню
-        Telegram.WebApp.MainButton.setParams({
-            text: "Назад",
-            color: "#FFFFFF",
-            textColor: "#000000"
-        }).show();
+        // Handle back button click
+        Telegram.WebApp.BackButton.onClick(goBack);
 </script>
 
 </body>
