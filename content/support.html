@@ -10,7 +10,6 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages_projects/tabs.css">
     <link rel="stylesheet" href="support_style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 </head>
 <body>
@@ -161,27 +160,6 @@
         star.style.animation += `, move${i} ${duration}s ease-in-out infinite`;
         star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
     }
-</script>
-
-<script>
-        Telegram.WebApp.ready();
-
-        // Function to go to another page
-        function goToPage() {
-            document.getElementById('content').classList.add('hidden');
-            document.getElementById('another-page').classList.remove('hidden');
-            Telegram.WebApp.BackButton.show();
-        }
-
-        // Function to go back to the main page
-        function goBack() {
-            document.getElementById('content').classList.remove('hidden');
-            document.getElementById('another-page').classList.add('hidden');
-            Telegram.WebApp.BackButton.hide();
-        }
-
-        // Handle back button click
-        Telegram.WebApp.BackButton.onClick(goBack);
 </script>
 
 </body>
