@@ -10,27 +10,7 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages_projects/tabs.css">
     <link rel="stylesheet" href="support_style.css">
-      <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        function onTelegramWebAppReady() {
-            const tg = window.Telegram.WebApp;
-            
-            // Настройка кнопки "Назад"
-            tg.BackButton.show();
-            
-            // Обработка нажатия на кнопку "Назад"
-            tg.BackButton.onClick(() => {
-                window.history.back();
-            });
-        }
 
-        window.addEventListener('DOMContentLoaded', (event) => {
-            if (window.Telegram.WebApp) {
-                onTelegramWebAppReady();
-            }
-        });
-    </script>
-    
 </head>
 <body>
 <div class="alert"><p>скопировано</p></div>
@@ -180,6 +160,20 @@
         star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
     }
 </script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+    // Инициализация Telegram Web App
+    Telegram.WebApp.ready();
+    Telegram.WebApp.SettingsButton = true
+    // Включение кнопки настроек
+    let Telegram;
+    Telegram.WebApp.SettingsButton.show();
 
+    // Обработка события клика по кнопке настроек
+    Telegram.WebApp.onEvent('settingsButtonClicked', () => {
+        console.log('Settings button clicked');
+
+    });
+</script>
 </body>
 </html>

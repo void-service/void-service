@@ -11,18 +11,6 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages_projects/tabs.css">
 
-    <style>
-        .block {
-            display: none; /* По умолчанию скрываем все блоки */
-        }
-        .block.active {
-            display: block; /* Показываем блоки с классом 'active' */
-        }
-        .filter-btn.active {
-            font-weight: bold; /* Отображение активной кнопки */
-        }
-    </style>
-
 </head>
 <body>
 <div class="tabs">
@@ -36,292 +24,289 @@
  <div class="stars"></div>
  <div class="container">
      <div class="main">
-        <!-- Контейнер кнопок фильтра -->
-        <div class="filter-container">
-            <button class="filter-btn active" onclick="showCategory('all')">Все</button>
-            <button class="filter-btn" onclick="showCategory('tap')">Тапалки</button>
-            <button class="filter-btn" onclick="showCategory('site')">Сайты</button>
-        </div>
-        <script src="script.js"></script>
-        
          <div class="separator">
+             <div class="filter-container">
+                 <button class="filter-btn active" onclick="showCategory('all')">Все</button>
+                 <button class="filter-btn" onclick="showCategory('tap')">Тапалки</button>
+                 <button class="filter-btn" onclick="showCategory('site')">Сайты</button>
+             </div>
              <div class="list_project">
+                 <div class="item">
+                     <div class="block all site">
+                         <div class="logo" ><!-- dogs -->
+                             <img src="logos/dogs.png">
+                         </div>
+                         <div class="description"><p>⚡Получаем аирдроп Dogs за возраст вашего телеграм аккаунта </p></div>
+                         <div class="button">
+                             <a href="pages_projects/dogs.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all site">
+                         <div class="logo"><!-- 22. Cats -->
+                             <img src="logos/cats.png">
+                         </div>
+                         <div class="description"><p>⚡Получаем аирдроп Cats </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_cats.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all site">
+                         <div class="logo" ><!-- 22. Ducks -->
+                             <img src="logos/ducs.png">
+                         </div>
+                         <div class="description"><p>⚡Получаем аирдроп DUCKS </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_ducks.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Meta Racing -->
+                             <img src="https://pbs.twimg.com/media/GSgm2Q9WUAAQcWT?format=png&name=small">
+                         </div>
+                         <div class="description"><p>⚡Играем в гонки от Meta Racing </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_metaracing.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Dejen Dog -->
+                             <img src="https://pbs.twimg.com/profile_banners/1628116157025640450/1720583017/600x200">
+                         </div>
+                         <div class="description"><p>⚡Собираем боксы от Hashkey </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_dejendog.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Tg stars -->
+                             <img src="logos/stars.png">
+                         </div>
+                         <div class="description"><p>⚡Собираем звёзды в телеграм </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_tgstars.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Lumcity -->
+                             <img src="https://pbs.twimg.com/media/GSgezJ-WoAAy6Hy?format=png&name=small">
+                         </div>
+                         <div class="description"><p>⚡Развиваем город в Lumcity </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_lumcity.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Tabi -->
+                             <img src="https://files.tabichain.com/voyage2/assets/images/header/logo.svg">
+                         </div>
+                         <div class="description"><p>⚡Фармим монеты от Tabi </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_tabi.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo"><!-- 22. Tomarket -->
+                             <img src="https://pbs.twimg.com/media/GSRpc5NagAAn1FW?format=png&name=small">
+                         </div>
+                         <div class="description"><p>⚡Собираем томаты в тапалке </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_tomarket.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo"><!-- 22. Flare -->
+                             <img src="https://pbs.twimg.com/media/GRkR02RXoAAd7tG?format=jpg&name=medium">
+                         </div>
+                         <div class="description"><p>⚡Фармим монеты от Flare </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_flare.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Pixeltap -->
+                             <img src="logos/pixelab.png">
+                         </div>
+                         <div class="description"><p>⚡Фармим монеты от Pixeltap </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_Pixeltap.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. GEMZcoin -->
+                             <img src="logos/gemz.png">
+                         </div>
+                         <div class="description"><p>⚡Фармим монеты от GEMZcoin </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_GEMZcoin.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 22. Rollertap -->
+                             <img src="logos/rollertap.png">
+                         </div>
+                         <div class="description"><p>⚡Фармим монеты от Rollercoin </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_rollertap.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 21. Cryptorank -->
+                             <img src="https://cryptorank.io/static/logo.svg">
+                         </div>
+                         <div class="description"><p>⚡Фармим поинты от Cryptorank </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_cryptorank.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all tap">
+                         <div class="logo" ><!-- 20. TapSwap -->
+                             <img src="https://tapswap.ai/assets/logo-XL_wxRoR.svg">
+                         </div>
+                         <div class="description"><p>💥Тапаем и получаем аирдроп от TapSwap </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_tapswap.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
                 <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 60px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Dogs -->
-                            <img src="https://pbs.twimg.com/media/GSgpSp0XsAEKm6a?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Получаем аирдроп Dogs за возраст вашего телеграм аккаунта </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_dogs.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 70px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Cats -->
-                            <img src="https://pbs.twimg.com/media/GSgoq-KXAAA31vX?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Получаем аирдроп Cats </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_cats.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 70px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Ducks -->
-                            <img src="https://pbs.twimg.com/media/GSgoMTEWYAAbxrm?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Получаем аирдроп DUCKS </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_ducks.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 50px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Meta Racing -->
-                            <img src="https://pbs.twimg.com/media/GSgm2Q9WUAAQcWT?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Играем в гонки от Meta Racing </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_metaracing.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 50px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Dejen Dog -->
-                            <img src="https://pbs.twimg.com/profile_banners/1628116157025640450/1720583017/600x200">
-                        </div>
-                        <div class="description"><p>⚡Собираем боксы от Hashkey </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_dejendog.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 60px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Tg stars -->
-                            <img src="https://pbs.twimg.com/media/GSgjWm2XsAAV7HW?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Собираем звёзды в телеграм </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_tgstars.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 60px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Lumcity -->
-                            <img src="https://pbs.twimg.com/media/GSgezJ-WoAAy6Hy?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Развиваем город в Lumcity </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_lumcity.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 40px; margin-top: 10px;  margin-bottom: 10px;"><!-- 22. Tabi -->
-                            <img src="https://files.tabichain.com/voyage2/assets/images/header/logo.svg">
-                        </div>
-                        <div class="description"><p>⚡Фармим монеты от Tabi </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_tabi.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 60px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Tomarket -->
-                            <img src="https://pbs.twimg.com/media/GSRpc5NagAAn1FW?format=png&name=small">
-                        </div>
-                        <div class="description"><p>⚡Собираем томаты в тапалке </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_tomarket.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 60px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. Flare -->
-                            <img src="https://pbs.twimg.com/media/GRkR02RXoAAd7tG?format=jpg&name=medium">
-                        </div>
-                        <div class="description"><p>⚡Фармим монеты от Flare </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_flare.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 80px; margin-top: 5px; margin-bottom: 10px;"><!-- 22. Pixeltap -->
-                            <img src="https://dashboard.pixelverse.xyz/static/media/ReferralLinkLoginLeftImage.3b22e7219142f8b640d0.png">
-                        </div>
-                        <div class="description"><p>⚡Фармим монеты от Pixeltap </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_Pixeltap.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 80px; margin-top: 5px;  margin-bottom: 10px;"><!-- 22. GEMZcoin -->
-                            <img src="https://yt3.googleusercontent.com/fbckgsdExpDDC1NiYy6u237emt3DH0Cfnd8_5qqZro6WzSCZHLUZSYO16eeT3eZ5tgcmOksQly8=s160-c-k-c0x00ffffff-no-rj">
-                        </div>
-                        <div class="description"><p>⚡Фармим монеты от GEMZcoin </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_GEMZcoin.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 50px; margin-top: 5px;"><!-- 22. Rollertap -->
-                            <img src="https://static.rollercoin.com/static/img/banners/6686954a7643815232d30a91/banner-img.png?v=1720117306610">
-                        </div>
-                        <div class="description"><p>⚡Фармим монеты от Rollercoin </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_rollertap.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 40px; margin-top: 5px;"><!-- 21. Cryptorank -->
-                            <img src="https://cryptorank.io/static/logo.svg">
-                        </div>
-                        <div class="description"><p>⚡Фармим поинты от Cryptorank </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_cryptorank.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 40px; margin-top: 5px;"><!-- 20. TapSwap -->
-                            <img src="https://tapswap.ai/assets/logo-XL_wxRoR.svg">
-                        </div>
-                        <div class="description"><p>💥Тапаем и получаем аирдроп от TapSwap </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_tapswap.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block all site">  <!-- означает что класс есть в разделе "Все" и "Сайты" -->
-                        <div class="logo" style="height: 40px;"><!-- 19. SoMon -->
+                    <div class="block all site">
+                        <div class="logo" ><!-- 19. SoMon -->
                             <img src="https://www.social.monster/assets/somon-dark.svg">
                         </div>
-                        <div class="description"><p>💥Тапаем и получаем аирдроп от TapSwap </p></div>
+                        <div class="description"><p>⚡Собираем поинты ждем токены 0w0 от SoMon </p></div>
                         <div class="button">
                             <a href="pages_projects/layout_somon.html">
                                 <button>перейти</button>
@@ -336,7 +321,7 @@
                 </div>
                 <div class="item">
                     <div class="block all site">
-                        <div class="logo" style="height: 40px;"><!-- 18. Boomland -->
+                        <div class="logo"><!-- 18. Boomland -->
                             <img src="https://airdrop.boomland.io/_next/static/media/boomland_airdrop.36cc6b01.png">
                         </div>
                         <div class="description"><p>🔥Играем в бесплатную игру от Boomland и получаем аирдроп </p></div>
@@ -354,7 +339,7 @@
                 </div>
                 <div class="item">
                     <div class="block all site">
-                        <div class="logo" style="height: 40px;"><!-- 17. Super Champs -->
+                        <div class="logo" ><!-- 17. Super Champs -->
                             <img src="https://app.superchamps.com/static/superchamps-logo-8816de26dfe7e0ab1be4a095cef5e144.png">
                         </div>
                         <div class="description"><p>🔥Бесплатно собираем токены CHAMP от Super Champs </p></div>
@@ -372,7 +357,7 @@
                 </div>
                 <div class="item">
                     <div class="block all site">
-                        <div class="logo" style="height: 40px;"><!-- 16. Testnet Sonic -->
+                        <div class="logo"><!-- 16. Testnet Sonic -->
                             <img src="https://odyssey.sonic.game/sonic.png">
                         </div>
                         <div class="description"><p>⚡️Проходим тестнет от проекта Sonic и получаем токены </p></div>
@@ -388,32 +373,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="block all tap">  
-                        <div class="logo" style="height: 40px;"><!-- 22. Treasure Tapper -->
-                            <img src="https://news.gala.com/wp-content/uploads/2024/02/new-gala-1.png">
-                        </div>
-                        <div class="description"><p>⚡Собираем поинты от Gala </p></div>
-                        <div class="button">
-                            <a href="pages_projects/layout_treasuretapper.html">
-                                <button>перейти</button>
-                            </a>
-                            <div class="space">
-                                <span style="--i: 31" class="star"></span>
-                                <span style="--i: 70" class="star"></span>
-                                <span style="--i: 57" class="star"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                  <div class="item">
-                    <div class="block all site">
+                     <div class="block all tap">
+                         <div class="logo"><!-- 22. Treasure Tapper -->
+                             <img src="https://news.gala.com/wp-content/uploads/2024/02/new-gala-1.png" alt="">
+                         </div>
+                         <div class="description"><p>⚡Собираем поинты от Gala </p></div>
+                         <div class="button">
+                             <a href="pages_projects/layout_treasuretapper.html">
+                                 <button>перейти</button>
+                             </a>
+                             <div class="space">
+                                 <span style="--i: 31" class="star"></span>
+                                 <span style="--i: 70" class="star"></span>
+                                 <span style="--i: 57" class="star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="block all site">
                          <div class="logo"><!-- 14.Havens Compass -->
                              <img src="https://www.havenscompass.com/images/HC_Long_Green.svg">
                          </div>
                          <div class="description"><p>⚡️Раздача от Havens Compass c пул наград 200 000$</p></div>
                          <div class="button">
-                             <a href="pages_projects/layout_HavensCompass.html">
+                             <a href="pages_projects/HavensCompass.html">
                                  <button>перейти</button>
                              </a>
                              <div class="space">
@@ -425,7 +410,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"> <!-- 1. Catizen -->
                              <img src="https://catizen.ai/static/images/logo.png"> <!--Если по ссылке не кореектно отображается, то ширину делать 130рх-->
                          </div>
@@ -443,7 +428,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all site">
+                     <div class="block all site">
                          <div class="logo"> <!-- 2. Delabs -->
                              <img src="logos/delabs.png">
                          </div>
@@ -461,8 +446,8 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all site">
-                         <div class="logo"style="padding-top: 5px; padding-bottom: 5px;"> <!-- 3. Grass -->
+                     <div class="block all site">
+                         <div class="logo" style="padding-top: 5px; padding-bottom: 5px;"> <!-- 3. Grass -->
                              <img src="https://app.getgrass.io/_next/image?url=%2Fimages%2Flogos%2Fgrass-logo-dark.png&w=1080&q=75">
                          </div>
                          <div class="description"><p>🌱Пассивно фармим поинты для airdrop от Grass </p></div>
@@ -479,7 +464,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"> <!-- 4. Blum -->
                              <img src="https://assets-global.website-files.com/65b6a1a4a0e2af577bccce96/65ba901600bd81cc8964b9ef_blum-logo.svg" style="padding-top: 5px; padding-bottom: 5px;">
                          </div>
@@ -497,7 +482,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all site">
+                     <div class="block all site">
                          <div class="logo">
                              <img src="logos/ogb.png"> <!-- 6. OGCommunnity -->
                          </div>
@@ -515,7 +500,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo">
                              <img src="https://cdn.memefi.club/landing/logo/MemefiLogoFull.webp"> <!-- 7. MemeFi -->
                          </div>
@@ -533,7 +518,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"><!-- 8. Momo Ai -->
                              <img src="logos/momoailogo.png" style="padding-top: 5px; padding-bottom: 5px;">
                          </div>
@@ -551,7 +536,7 @@
                  </div>
              </div>
                  <div class="item"> <!--новый блок-->
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"><!-- 9. Hot Near -->
                              <img src="https://hotdao.ai/logo.fe84b0e2.svg" style="padding-top: 5px; padding-right: 5px;">
                          </div>
@@ -569,7 +554,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"><!-- 10. Hamster Kombat -->
                              <img src="https://pbs.twimg.com/profile_banners/1772330982382632960/1711452971/1500x500" >
                          </div>
@@ -587,7 +572,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"><!-- 11. Empire's Battle -->
                              <img src="https://empiresbattle.com/webp_x1/logo_x2.webp">
                          </div>
@@ -605,7 +590,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo" style="height: 60px;"><!-- 12. Pocket Rocket -->
                              <img src="https://pbs.twimg.com/profile_images/1788496006696333312/T7cOJ0Jw_400x400.jpg">
                          </div>
@@ -623,7 +608,7 @@
                      </div>
                  </div>
                  <div class="item">
-                    <div class="block all tap">
+                     <div class="block all tap">
                          <div class="logo"><!-- 13. Bobak -->
                              <img src="https://bobak.meme/images/logo.svg">
                          </div>
@@ -640,12 +625,12 @@
                          </div>
                      </div>
                  </div>
-
-         </div>
-     </div>
+             </div>
+        </div>
      </div>
  </div>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="script.js"></script>
+
  <script>
      document.addEventListener("DOMContentLoaded", function() {
          setTimeout(function() {
@@ -680,8 +665,6 @@
          // Добавляем анимацию мерцания
          star.style.animation = `twinkling ${Math.random() * 3 + 1}s infinite`;
 
-
-         
      //     // Добавляем анимацию планового передвижения
      //     const moveX = Math.random() < 0.5 ? -1 : 1;
      //     const moveY = Math.random() < 0.5 ? -1 : 1;
@@ -699,8 +682,5 @@
      //     star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
      }
  </script>
-
-
- 
  </body>
  </html>

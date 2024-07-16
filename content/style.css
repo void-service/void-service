@@ -55,7 +55,6 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    
 }
 
 .main .list_project .item .logo {
@@ -74,7 +73,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 140px;
-    height: auto;
+    height: 65px;
 }
 
 .main .list_project .item .block .description p{
@@ -127,6 +126,15 @@ body {
     animation: space-animation calc(0.1s * var(--i)) linear infinite;
 }
 
+@keyframes space-animation {
+    0% {
+        transform: rotate(-30deg) translateY(calc(-52% * var(--i)));
+    }
+
+    100% {
+        transform: rotate(-30deg) translateY(calc(52% * var(--i)));
+    }
+}
 
 .filter-container {
     display: flex;
@@ -137,7 +145,7 @@ body {
 
 /* Стиль контейнера кнопок фильтра */
 .filter-btn {
-    background: linear-gradient(to left,#5e35b1 50%, #5e35b1 50%);
+    background: linear-gradient(to left, #303161 0%, #37365e 50%, #303161 100%);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -153,7 +161,6 @@ body {
     overflow: hidden;
     transition: background 0.3s ease, transform 0.3s ease;
 }
-
 .filter-btn::before {
     content: "";
     position: absolute;
@@ -169,7 +176,6 @@ body {
 }
 
 .filter-btn:hover {
-    background: linear-gradient(to left,#6e1c7c 100% #5e35b1 50%, #6e1c7c 100%);
     transform: scale(1.05);
 }
 
@@ -179,7 +185,6 @@ body {
 
 /* Стиль для активной кнопки */
 .filter-btn.active {
-    background: linear-gradient(to left, #6e1c7c 100% #5e35b1 50%, #6e1c7c 100%);
     color: white;
 }
 
@@ -187,39 +192,4 @@ body {
     transform: translate(-50%, -50%) scale(1);
 }
 
-@keyframes space-animation {
-    0% {
-        transform: rotate(-30deg) translateY(calc(-52% * var(--i)));
-    }
-
-    100% {
-        transform: rotate(-30deg) translateY(calc(52% * var(--i)));
-    }
-}
-
-/*
-.main .list_project .item .block .button button{
-    bottom: 1px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Jura', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content:  center;
-    height: 30px;
-    width: 150px;
-    text-decoration: none;
-    color:white;
-    font-weight: 700;
-    font-size: 11pt;
-    background: linear-gradient(to left, #303161 0%, #37365e 50%, #303161 100%);
-    border: none;
-    border-radius: 5px;
-}
-
-.main .list_project .item .block .button button:active {
-    background: #2c3e50;
-}
- */
 

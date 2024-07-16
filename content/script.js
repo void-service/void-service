@@ -8,7 +8,7 @@ function showCategory(category) {
 
         // Если блок соответствует категории или если категория 'all', показываем элемент
         if (category === 'all' || block.classList.contains(category)) {
-            item.style.display = 'block';
+            item.style.display = 'flex';
         } else {
             item.style.display = 'none';
         }
