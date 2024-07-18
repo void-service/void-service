@@ -121,12 +121,21 @@ body {
     margin-bottom: 50px;
 
 }
-.container .page .info #instruction {
+
+.container .page .info #instruction{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .page .info #instruction .button{
     display: flex;
     flex-direction: column;
     align-items: center; /* Центрирование кнопок по горизонтали */
-
+    justify-content: center;
 }
+
 .container .page .info #instruction .link {
     height: 30px;
     width: 150px;
@@ -138,7 +147,6 @@ body {
     font-size: 11pt;
     border: none;
     border-radius: 5px;
-    text-align: center; /* Выравнивание текста по центру */
     line-height: 30px; /* Высота строки для вертикального выравнивания текста */
 }
 

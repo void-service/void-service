@@ -43,17 +43,10 @@
     transition: 0.5s;
 }
 
-
-.buttons label:nth-child(1):hover,
-.buttons label:nth-child(2):hover {
-    opacity: 1;
-    filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
-}
-
 .tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
 .tabs input:nth-child(2):checked ~ .buttons label:nth-child(2){
     color: #fff;
     opacity: 1;
-    filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
+    /*filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);*/
 }
 
