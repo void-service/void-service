@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="pages_projects/tabs.css">
+    <link rel="stylesheet" href="tabs.css">
     <link rel="stylesheet" href="support_style.css">
+    <script src="Talisker.js"></script>
+
 
 </head>
 <body>
@@ -18,9 +20,11 @@
 <div class="tabs">
     <input id="home" type="radio" name="tabsMenu">
     <input id="support" type="radio" name="tabsMenu">
-    <div class="buttons">
-        <label for="home" data-href="main_page.html"><i class="fa-solid fa-house"></i></label>
-        <label for="support"><i class="fa-sharp fa-solid fa-circle-info"></i></label>
+    <input id="profile" type="radio" name="tabsMenu">
+    <div class="buttons_tabs">
+        <label for="home" id="home_button" data-href="main_page.html"><i class="fa-solid fa-house"></i></label>
+        <label for="support" id="support_button" data-href="support.html"><i class="fa-sharp fa-solid fa-circle-info"></i></label>
+        <label for="profile" id="profile_button" data-href="profile.html"><i class="fa-solid fa-user"></i></label>
     </div>
 </div>
 <div class="stars"></div>
@@ -70,9 +74,11 @@
             <p class="name">VOID</p>
         </div>
     </div>
-
+    <footer>
+        <p>&copy; 2024 danse macabre & cooperxgod. Все права защищены.</p>
+    </footer>
 </div>
-
+<script src="mainScript.js"></script>
 <script>
     let blocks = document.getElementsByClassName("address");
     let content = document.getElementsByClassName('alert');
@@ -109,71 +115,7 @@
             }
         });
     });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            document.getElementById("support").checked = true;
-        }, 80);
-    });
-
-    document.querySelectorAll('.buttons label').forEach(label => {
-        label.addEventListener('click', function() {
-            const inputId = this.getAttribute('for');
-            const href = this.getAttribute('data-href');
-            if (href) {
-                window.location.href = href;
-            }
-        });
-    });
-
-    const starsContainer = document.querySelector('.stars');
-
-    // Генерируем звезды с разными размерами и рандомными координатами
-    for (let i = 0; i < 100; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
-        star.style.width = `${Math.random() * 2}px`; // Размер звезды от 1 до 3 пикселей
-        star.style.height = star.style.width;
-        star.style.background = '#fff';
-        star.style.position = 'absolute';
-        star.style.left = `${Math.random() * 100}%`; // Рандомная координата по горизонтали
-        star.style.top = `${Math.random() * 100}%`; // Рандомная координата по вертикали
-        starsContainer.appendChild(star);
-
-        // Добавляем анимацию мерцания
-        star.style.animation = `twinkling ${Math.random() * 3 + 1}s infinite`;
-
-        // Добавляем анимацию планового передвижения
-        const moveX = Math.random() < 0.5 ? -1 : 1;
-        const moveY = Math.random() < 0.5 ? -1 : 1;
-        const duration = Math.random() * 30 + 10; // Увеличиваем длительность перемещения
-        const keyframes = `
-      @keyframes move${i} {
-        0% { transform: translate(0, 0); }
-        50% { transform: translate(${moveX * Math.random() * 20}px, ${moveY * Math.random() * 20}px); }
-        100% { transform: translate(0, 0); }
-      }
-    `;
-        document.styleSheets[0].insertRule(keyframes, document.styleSheets[0].cssRules.length);
-
-        star.style.animation += `, move${i} ${duration}s ease-in-out infinite`;
-        star.style.animationDirection = `${moveX > 0 ? 'normal' : 'reverse'} ${moveY > 0 ? 'normal' : 'reverse'}`;
-    }
 </script>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
-    // Инициализация Telegram Web App
-    Telegram.WebApp.ready();
-    Telegram.WebApp.SettingsButton = true
-    // Включение кнопки настроек
-    let Telegram;
-    Telegram.WebApp.SettingsButton.show();
-
-    // Обработка события клика по кнопке настроек
-    Telegram.WebApp.onEvent('settingsButtonClicked', () => {
-        console.log('Settings button clicked');
-
-    });
-</script>
 </body>
 </html>
