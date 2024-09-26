@@ -4,27 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta property="og:image" content="prew.png">
     <title>void loading</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content/load_screen/load_screen.css">
     <script src="content/Talisker.js"></script>
 </head>
 
 <body>
-    <div class="video-container" >
-        <video autoplay muted loop id="background-video" class="rotating-video" preload="auto">
-            <source src="black_hole.mp4" type="video/mp4">
-        </video>
+<div class="load-screen">
+    <div class="logo">
+        <img src="content/load_screen/лови%20чмо.png" alt=" ">
     </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        let dataBase = [
-            {id: 0,
-                name: "none"}
-        ]
-
+    <div class="name">
+        <p>VOID</p>
+    </div>
+</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+ <script>
         let saveStatus = false
 
         let db;
@@ -89,9 +86,9 @@
             } else {
                 window.location.href = 'content/profile.html';
             }
-        }, 2000);
+        }, 3000);
 
-    </script>
+ </script>
 </body>
 
 </html>
