@@ -42,6 +42,54 @@ let allProject = [
         quick_start: "https://t.me/boolfamily_bot/join?startapp=PKJFZ"
     },
     {
+        id: 57,
+        name: "Paradise",
+        filterClass: "all tap",
+        logo: "https://paradisevs.com/assets/images/logo.svg",
+        description: "🎁Новая тапалка Paradise",
+        quick_start: "https://t.me/paradisetapbot/play?startapp=6268615078"
+    },
+    {
+        id: 56,
+        name: "Notpixel",
+        filterClass: "all tap",
+        logo: "logos/notPixel.png",
+        description: "💎Notpixel - новая игра от разработчиков Notcoin",
+        quick_start: "https://t.me/notpixel/app?startapp=f6268615078"
+    },
+    {
+        id: 55,
+        name: "Electra",
+        filterClass: "all tap",
+        logo: "logos/electra.png",
+        description: "🔥Тапалка от новой тг-биржи Electra",
+        quick_start: "https://t.me/ElectraAppBot/dex?startapp=1SrbNJrR"
+    },
+    {
+        id: 54,
+        name: "PricePulse",
+        filterClass: "all tap",
+        logo: "https://primex.finance/images/primex-logo.svg",
+        description: "💎Тапалка PricePulse от Primex",
+        quick_start: "https://t.me/Primex_PricePulse_Bot?start=6268615078"
+    },
+    {
+        id: 53,
+        name: "X-Empire",
+        filterClass: "all tap site",
+        logo: "logos/X-empire.png",
+        description: "💎Гемная тапалка - X Empire",
+        quick_start: "https://t.me/empirebot/game?startapp=hero6268615078"
+    },
+    {
+        id: 52,
+        name: "Moonbix",
+        filterClass: "all tap site",
+        logo: "logos/moonbix.png",
+        description: "🔥Мини-игра от Binance",
+        quick_start: "https://t.me/Binance_Moonbix_bot/start?startapp=ref_6268615078&startApp=ref_6268615078"
+    },
+    {
         id: 46,
         name: "Wizzwoods",
         filterClass: "all tap",

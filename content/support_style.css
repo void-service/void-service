@@ -13,9 +13,11 @@ body{
     display: flex;
     justify-content: center;
 }
+
 p {
     color: white;
 }
+
 .alert {
     position: fixed;
     display: none;
@@ -176,7 +178,7 @@ footer {
     width: 100%;
     height: 60px;
     color: white;
-    font-size: 7pt;
+    font-size: 6pt;
     display: flex;
     justify-content: center;
     align-items: end;
