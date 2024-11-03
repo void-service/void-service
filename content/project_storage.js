@@ -438,7 +438,7 @@ let allProject = [
         quick_start: "https://t.me/memefi_coin_bot?start=r_f2e9825212"
     },
     {
-        name:   ",
+        name: "momo-ai",
         filterClass: "all tap",
         logo: "logos/momo-ai.png",
         description: "⚡️Растим дерево и получаем airdrop ",
