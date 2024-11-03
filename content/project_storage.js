@@ -130,14 +130,14 @@ let allProject = [
     {
         name: "Notpixel",
         filterClass: "all tap",
-        logo: "logos/Notpixel.png",
+        logo: "logos/notPixel.png",
         description: "💎Notpixel - новая игра от разработчиков Notcoin",
         quick_start: "https://t.me/notpixel/app?startapp=f6268615078"
     },
     {
         name: "Electra",
         filterClass: "all tap",
-        logo: "logos/Electra.png",
+        logo: "logos/electra.png",
         description: "🔥Тапалка от новой тг-биржи Electra",
         quick_start: "https://t.me/ElectraAppBot/dex?startapp=1SrbNJrR"
     },
@@ -151,14 +151,14 @@ let allProject = [
     {
         name: "X-Empire",
         filterClass: "all tap site",
-        logo: "logos/X-Empire.png",
+        logo: "logos/X-empire.png",
         description: "💎Гемная тапалка - X Empire",
         quick_start: "https://t.me/empirebot/game?startapp=hero6268615078"
     },
     {
         name: "Moonbix",
         filterClass: "all tap site",
-        logo: "logos/Moonbix.png",
+        logo: "logos/moonbix.png",
         description: "🔥Мини-игра от Binance",
         quick_start: "https://t.me/Binance_Moonbix_bot/start?startapp=ref_6268615078&startApp=ref_6268615078"
     },
