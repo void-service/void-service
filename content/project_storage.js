@@ -62,7 +62,7 @@ let allProject = [
         filterClass: "all tap",
         logo: "logos/PAWS.png",
         description: "🏆Новая тапалка по типу DOGS - PAWS",
-        quick_start: "https://t.me/drft_party_bot/game?startapp=6268615078"
+        quick_start: "https://t.me/PAWSOG_bot/PAWS?startapp=1rAAWXv2"
     },
     {
         name: "EtherDrops",
